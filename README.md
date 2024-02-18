@@ -1,2 +1,2 @@
-# ecommerce-store-terraform-wrokspace
+# ecommerce-store-terraform-workspace
 terraform workspace for ecommerce store
