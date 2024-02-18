@@ -23,6 +23,7 @@ resource "cloudflare_pages_project" "app" {
   account_id        = var.cloudflare_account_id
   name              = "${local.project_name}"
   production_branch = "gh-pages"
+  
   source {
     type = "github"
     config {
@@ -38,7 +39,7 @@ resource "cloudflare_pages_project" "app" {
 
   deployment_configs {
     production {
-
+      compatibility_flags = ["nodejs_compat"]
     }
   }
 }
