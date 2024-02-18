@@ -41,5 +41,9 @@ resource "cloudflare_pages_project" "app" {
     production {
       compatibility_flags = ["nodejs_compat"]
     }
+
+    preview {
+      compatibility_flags = ["nodejs_compat"]
+    }
   }
 }
